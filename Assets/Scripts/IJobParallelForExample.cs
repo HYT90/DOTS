@@ -13,7 +13,7 @@ public struct MyJobParallelFor : IJobParallelFor
     //[WriteOnly]//唯寫
     public NativeArray<float> array;
 
-    //Job分配成index個批次
+    //Job對一NativeContainer的每個元素執行動作, index為元素的位置
     public void Execute(int index)
     {
         a[index] = .5f * index;
@@ -60,6 +60,7 @@ public class IJobParallelForExample : MonoBehaviour
         jobParallel.array = _array;
 
         // Schedule the job with one Execute per index in the results array and only 1 item per processing batch
+        //Schedule(int length, int batches), 帶入NativeContainer的長度以及要分配的批次數
         JobHandle jobHandle = jobParallel.Schedule(_array.Length, 10);
 
         jobHandle.Complete();
