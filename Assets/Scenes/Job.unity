@@ -225,9 +225,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1570147543}
-  - component: {fileID: 1570147542}
-  - component: {fileID: 1570147544}
   - component: {fileID: 1570147545}
+  - component: {fileID: 1570147544}
+  - component: {fileID: 1570147542}
   m_Layer: 0
   m_Name: JobsManager
   m_TagString: Untagged
@@ -244,9 +244,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1570147541}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30a89856c85490749b31372fab34d66f, type: 3}
+  m_Script: {fileID: 11500000, guid: dc0727e347cf8484e8509be3e7a86b7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isJob: 0
 --- !u!4 &1570147543
 Transform:
   m_ObjectHideFlags: 0
@@ -270,10 +271,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1570147541}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc0727e347cf8484e8509be3e7a86b7e, type: 3}
+  m_Script: {fileID: 11500000, guid: 30a89856c85490749b31372fab34d66f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isJob: 0
+  jobEnable: 0
 --- !u!114 &1570147545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +288,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cube: {fileID: 5789681504645669799, guid: d7a83b815ef80e44d8dc4cacafeabc6e, type: 3}
+  l: 1
+  jobOn: 0
 --- !u!1 &1803942660
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,8 +366,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803942660}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.3140443, y: 0.6326788, z: -0.31291664, w: -0.63496214}
+  m_LocalPosition: {x: 76.42071, y: 83.31324, z: 10.042314}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
