@@ -24,6 +24,12 @@ public struct MyJobForTransform : IJobParallelForTransform
         {
             zSpeed[index] = +math.abs(zSpeed[index]);
         }
+
+        for (int i = 0; i < 1000; i++)
+        {
+            float j = math.exp((float)i);
+            j *= j;
+        }
     }
 }
 
@@ -88,7 +94,19 @@ public class IJobParallelForTransformExample : MonoBehaviour
                 {
                     zSpeed[i] = +math.abs(zSpeed[i]);
                 }
+
+                REALHARDMATH();
             }
+        }
+    }
+
+
+    void REALHARDMATH()
+    {
+        for(int i = 0; i<1000; i++)
+        {
+            float j = math.exp((float)i);
+            j *= j;
         }
     }
 }
